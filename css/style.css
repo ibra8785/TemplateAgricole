@@ -1,0 +1,563 @@
+:root
+{
+    --color-white: white;
+    --color-primary: #3c6a36;
+    --color-two: #2b2a28;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*__________ GENERAL __________*/
+
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+/*__________ NAV BAR __________*/
+
+.topNav
+{
+    width: 100%;
+    height: 6rem;
+    background-color: var(--color-white);
+    position: fixed;
+    z-index: 99;
+}
+
+.navLogo img
+{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.togNav
+{
+    background-color: black;
+}
+
+.titleNav
+{
+    color: black;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.topNav input
+{
+    width: 25rem;
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    font-size: 1.4rem;
+}
+
+.topNav input:focus
+{
+    outline: none;
+}
+
+.btn-topNav
+{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+.titleNav span
+{
+    color: var(--color-primary);
+}
+
+.navLinks a
+{
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navLinks li:hover a
+{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/*__________ HEADER __________*/
+
+.header
+{
+    height: 95vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))  , url(../img/header1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.headerText
+{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50% , 70%);
+}
+
+.headerText h1
+{
+    font-size: 4.8rem;
+    color: var(--color-white);
+    font-weight: bolder;
+}
+
+.headerText span
+{
+    color: var(--color-primary);
+}
+
+.headerText p
+{
+    font-size: 1.6rem;
+    color: var(--color-white);
+}
+
+.headerText .btn-header
+{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+}
+
+/*__________ BOX CONTENT __________*/
+
+.boxContent
+{
+    width: 100%;
+    min-height: 100rem;
+    background-color: var(--color-white);
+}
+
+/*__________ SECTION VEGETABLES __________*/
+
+.sectionVegetables
+{
+    width: 100%;
+    min-height: 20rem;
+    padding: 3rem 0;
+    background-attachment: fixed;
+}
+
+.vegetablesHaut
+{
+    margin-bottom: 3rem;
+}
+
+.cardVeg
+{
+    border: 2px solid var(--color-primary);
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.iconVeg
+{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.iconVeg img
+{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.imgVeg__principal
+{
+    height: 60rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/legumes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.imgVeg__principal h1
+{
+    color: var(--color-white);
+    font-weight: bolder;
+    font-size: 5rem;
+    padding-top: 10rem;
+}
+
+.cardVege
+{
+    border: none;
+}
+
+.cardVege img
+{
+    background-color: #f1efec;
+    height: 24rem;
+}
+
+.vegTitle h2
+{
+    font-weight: bolder;
+}
+
+.vegTitle p
+{
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+/*__________ SECTION APPROCHE __________*/
+
+.sectionApproche
+{
+    height: 35rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/header2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 1rem 0 3rem 0;
+}
+
+.textApproche
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.textApproche h1
+{
+    color: var(--color-white);
+    font-weight: bolder;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.textApproche p
+{
+    color: var(--color-white);
+    font-size: 1.6rem;
+}
+
+.btn-approche
+{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border: none;
+    margin-top: 1.5rem;
+}
+
+/*__________ SECTION FRUITS __________*/
+
+.sectionFruits
+{
+    width: 100%;
+    min-height: 20rem;
+    padding: 3rem 0;
+    background-attachment: fixed;
+}
+
+.imgFruit__principal
+{
+    height: 60rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/fruits.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.imgFruit__principal h1
+{
+    color: var(--color-white);
+    font-weight: bolder;
+    font-size: 5rem;
+    padding-top: 10rem;
+}
+
+.cardFruit
+{
+    border: none;
+}
+
+.cardFruit img
+{
+    background-color: #f1efec;
+    height: 24rem;
+}
+
+.fruiTitle h2
+{
+    font-weight: bolder;
+}
+
+.fruiTitle p
+{
+    font-size: 1.4rem;
+    color: var(--color-primary);
+}
+
+/*__________ SECTION STATISTIQUES __________*/
+
+.sectionStatistic
+{
+    height: 35rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/mandarine.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 1rem 0 3rem 0;
+}
+
+.statistic
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.statistic h1
+{
+    color: var(--color-white);
+    font-size: 4rem;
+    font-style: italic;
+    margin-right: 1rem;
+}
+
+.statistic h3
+{
+    color: var(--color-white);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.detailStatistic
+{
+    margin: 0 2rem 1rem;
+}
+
+.iconStat
+{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.iconStat img
+{
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: cover;
+}
+
+/*__________ SECTION AVIS __________*/
+
+.sectionAvis
+{
+    height: 45rem;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/arachide.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 1rem 0 3rem 0;
+}
+
+.textAvis
+{
+    padding: 2.5rem 0;
+}
+
+.textAvis h1
+{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: var(--color-white);
+}
+
+.cardCarousel
+{
+    min-height: 10rem;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.cardCarousel img
+{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.cardCarousel p
+{
+    margin-top: 2rem;
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+
+/*__________ SECTION PARTNER __________*/
+
+.sectionPartner
+{
+    min-height: 15rem;
+    width: 100%;
+    padding: 3rem 0 3.5rem;
+}
+
+.sectionPartner img
+{
+    height: 10rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/*__________ FOOTER __________*/
+
+.footer
+{
+    min-height: 35rem;
+    width: 100%;
+    background-color: var(--color-two);
+    padding: 3rem 0;
+}
+
+.footerContent
+{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #222120;
+}
+
+.titleFooter img
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+.titleFooter h1
+{
+    font-size: 3rem;
+    color: var(--color-white);
+    margin-left: 1rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.titleFooter span
+{
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-weight: bolder;
+}
+
+.illustrationFooter p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.footerDetail h1
+{
+    font-size: 3rem;
+    color: var(--color-white);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.footerDetail a
+{
+    display: block;
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.footerDetail a:hover
+{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.footerDetail__icon img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+.footerDetail__icon p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.socialNetwork
+{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.socialNetwork p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+}
+
+.socialNetwork img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+.copyright
+{
+    margin-top: 1rem;
+}
+
+.copyright p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,237 @@
+:root
+{
+    --color-white: white;
+    --color-primary: #3c6a36;
+    --color-two: #2b2a28;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*__________ GENERAL __________*/
+
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 10px;
+    font-family: 'Trebuchet MS';
+}
+
+/*__________ NAV BAR __________*/
+
+.topNav
+{
+    width: 100%;
+    height: 6rem;
+    background-color: #ccc;
+}
+
+.navLogo img
+{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.togNav
+{
+    background-color: black;
+}
+
+.titleNav
+{
+    color: black;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.topNav input
+{
+    width: 25rem;
+    padding: 1rem;
+    border: 1px solid var(--color-primary);
+    font-size: 1.4rem;
+}
+
+.topNav input:focus
+{
+    outline: none;
+}
+
+.btn-topNav
+{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+.titleNav span
+{
+    color: var(--color-primary);
+}
+
+.navLinks a
+{
+    color: black;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.navLinks li:hover a
+{
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/*__________ EQUIPE __________*/
+
+.equipe
+{
+    width: 100%;
+    min-height: 60rem;
+    padding: 3rem 0;
+}
+
+.titreEquipe
+{
+    background-color: var(--color-primary);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img
+{
+    margin-bottom: 2rem;
+}
+
+.titreEquipe h1
+{
+    color: var(--color-white);
+    font-size: 3.4rem;
+    font-weight: bolder;
+}
+
+.equipeFonction p
+{
+    font-size: 2.6rem;
+}
+
+/*__________ FOOTER __________*/
+
+.footer
+{
+    min-height: 35rem;
+    width: 100%;
+    background-color: var(--color-two);
+    padding: 3rem 0;
+}
+
+.footerContent
+{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #222120;
+}
+
+.titleFooter img
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+.titleFooter h1
+{
+    font-size: 3rem;
+    color: var(--color-white);
+    margin-left: 1rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.titleFooter span
+{
+    font-size: 3rem;
+    color: var(--color-primary);
+    font-weight: bolder;
+}
+
+.illustrationFooter p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.footerDetail h1
+{
+    font-size: 3rem;
+    color: var(--color-white);
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.footerDetail a
+{
+    display: block;
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.footerDetail a:hover
+{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.footerDetail__icon img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+.footerDetail__icon p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.socialNetwork
+{
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.socialNetwork p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+    margin-right: 2rem;
+}
+
+.socialNetwork img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}
+
+.copyright
+{
+    margin-top: 1rem;
+}
+
+.copyright p
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}EZ
